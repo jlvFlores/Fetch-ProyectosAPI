@@ -1,0 +1,37 @@
+html {
+    font-size:100%; /* normal 16px */
+}
+
+.container {
+    margin: 0 auto;
+    width: 40%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: darkcyan;
+    position: relative;
+    border-radius: 10px;
+}
+a {
+    text-decoration: none;
+	padding: 15px;
+	display: inline-block;
+	margin: 15px 0;
+	background: darkcyan;
+	color:#fff;
+	border-radius: 10px;
+	border:none;
+}
+a:hover {
+	text-decoration: none;
+	background: rgb(0, 107, 107);
+}
+
+footer {
+    margin: 200px auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
