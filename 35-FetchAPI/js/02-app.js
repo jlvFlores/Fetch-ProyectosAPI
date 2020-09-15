@@ -17,6 +17,5 @@ function mostrarHTML({ empresa, id, nombre, trabajo}) {
     <p>ID: ${id}</p>
     <p>Empleado: ${nombre}</p>
     <p>Trabajo: ${trabajo}</p>
-
     `;
 }
