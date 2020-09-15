@@ -1,4 +1,5 @@
 import * as UI from './interfaz.js';
+import API from './api.js';
 
 UI.formularioBuscar.addEventListener('submit', buscarCancion);
 
@@ -7,8 +8,8 @@ function buscarCancion(e) {
     e.preventDefault();
 
     // Obteber datos de formulario
-    const artista = document.querySelector('#artista').nodeValue;
-    const cancion = document.querySelector('#cancion').nodeValue;
+    const artista = document.querySelector('#artista').value;
+    const cancion = document.querySelector('#cancion').value;
 
     if(artista === '' || cancion === '') {
         // campos vacios
@@ -22,4 +23,9 @@ function buscarCancion(e) {
 
         return;
     }
+
+
+
+    const busqueda = new API(artista, cancion);
+    busqueda.consultarAPI();
 }
